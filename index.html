@@ -447,7 +447,6 @@
 		});
 
 		function closeNav(){
-            console.log($(window).width());
             if($(window).width() > 650){
 
                 $(".itemName").css("display", "none");
@@ -514,733 +513,694 @@
 
 		// ARTHUR //
 
-		// arthur = new Odometer({
-		// 	el: document.getElementById("arthur"),
-		// 	value: 245000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/arthurpicoli/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			arthur.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/arthurpicoli/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			arthur.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		arthur = new Odometer({
+			el: document.getElementById("arthur"),
+			value: 245000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/arthurpicoli/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					arthur.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/arthurpicoli/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					arthur.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
-		// caio = new Odometer({
-		// 	el: document.getElementById("caio"),
-		// 	value: 79000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/afiune_caio/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			caio.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/afiune_caio/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			caio.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		caio = new Odometer({
+			el: document.getElementById("caio"),
+			value: 79000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/afiune_caio/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					caio.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/afiune_caio/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					caio.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 		
 
-		// joao = new Odometer({
-		// 	el: document.getElementById("joao"),
-		// 	value: 76000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/joaolpedrosa/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			joao.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/joaolpedrosa/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			joao.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		joao = new Odometer({
+			el: document.getElementById("joao"),
+			value: 76000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/joaolpedrosa/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					joao.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/joaolpedrosa/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					joao.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 		
 
 
 
-		// bil = new Odometer({
-		// 	el: document.getElementById("bil"),
-		// 	value: 127000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/bilaraujjo/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			bil.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/bilaraujjo/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			bil.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		bil = new Odometer({
+			el: document.getElementById("bil"),
+			value: 127000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/bilaraujjo/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					bil.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/bilaraujjo/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					bil.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// juliette = new Odometer({
-		// 	el: document.getElementById("juliette"),
-		// 	value: 151500,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/juliette.freire/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			juliette.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/juliette.freire/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			juliette.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		juliette = new Odometer({
+			el: document.getElementById("juliette"),
+			value: 151500,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/juliette.freire/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					juliette.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/juliette.freire/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					juliette.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// kerline = new Odometer({
-		// 	el: document.getElementById("kerline"),
-		// 	value: 159900,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/kercardoso/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			kerline.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/kercardoso/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			kerline.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		kerline = new Odometer({
+			el: document.getElementById("kerline"),
+			value: 159900,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/kercardoso/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					kerline.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/kercardoso/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					kerline.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// lumena = new Odometer({
-		// 	el: document.getElementById("lumena"),
-		// 	value: 108900,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/lumena.aleluia/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			lumena.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/lumena.aleluia/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			lumena.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
-
-
-
-
-
-
-
-		// gilberto = new Odometer({
-		// 	el: document.getElementById("gilberto"),
-		// 	value: 54900,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/gilnogueiraofc/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			gilberto.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/gilnogueiraofc/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			gilberto.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		lumena = new Odometer({
+			el: document.getElementById("lumena"),
+			value: 108900,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/lumena.aleluia/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					lumena.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/lumena.aleluia/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					lumena.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
 
-		// thais = new Odometer({
-		// 	el: document.getElementById("thais"),
-		// 	value: 94700,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/thaisfbraz/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			thais.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/thaisfbraz/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			thais.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+
+		gilberto = new Odometer({
+			el: document.getElementById("gilberto"),
+			value: 54900,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/gilnogueiraofc/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					gilberto.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/gilnogueiraofc/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					gilberto.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
 
-		// sarah = new Odometer({
-		// 	el: document.getElementById("sarah"),
-		// 	value: 67500,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/sarah_andrade/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			sarah.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/sarah_andrade/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			sarah.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		thais = new Odometer({
+			el: document.getElementById("thais"),
+			value: 94700,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/thaisfbraz/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					thais.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/thaisfbraz/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					thais.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// karol = new Odometer({
-		// 	el: document.getElementById("karol"),
-		// 	value: 1600000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/karolconka/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			karol.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/karolconka/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			karol.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+
+		sarah = new Odometer({
+			el: document.getElementById("sarah"),
+			value: 67500,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/sarah_andrade/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					sarah.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/sarah_andrade/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					sarah.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// carla = new Odometer({
-		// 	el: document.getElementById("carla"),
-		// 	value: 2700000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/carladiaz/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			carla.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/carladiaz/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			carla.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
-
-
-
-
-		// camilla = new Odometer({
-		// 	el: document.getElementById("camilla"),
-		// 	value: 3100000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/camilladelucas/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			camilla.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/camilladelucas/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			camilla.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		karol = new Odometer({
+			el: document.getElementById("karol"),
+			value: 1600000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/karolconka/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					karol.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/karolconka/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					karol.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// pocah = new Odometer({
-		// 	el: document.getElementById("pocah"),
-		// 	value: 11700000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/pocah/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			pocah.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/pocah/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			pocah.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		carla = new Odometer({
+			el: document.getElementById("carla"),
+			value: 2700000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/carladiaz/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					carla.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/carladiaz/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					carla.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
+
+
+
+
+		camilla = new Odometer({
+			el: document.getElementById("camilla"),
+			value: 3100000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/camilladelucas/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					camilla.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/camilladelucas/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					camilla.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 
-		// negodi = new Odometer({
-		// 	el: document.getElementById("negodi"),
-		// 	value: 1100000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/negodioficial/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			negodi.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/negodioficial/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			negodi.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		pocah = new Odometer({
+			el: document.getElementById("pocah"),
+			value: 11700000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/pocah/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					pocah.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/pocah/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					pocah.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
+
+
+
+
+
+		negodi = new Odometer({
+			el: document.getElementById("negodi"),
+			value: 1100000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/negodioficial/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					negodi.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/negodioficial/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					negodi.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
 		
-		// lucas = new Odometer({
-		// 	el: document.getElementById("lucas"),
-		// 	value: 322200,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/lucaskokapenteado/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			lucas.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/lucaskokapenteado/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			lucas.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		lucas = new Odometer({
+			el: document.getElementById("lucas"),
+			value: 322200,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/lucaskokapenteado/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					lucas.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/lucaskokapenteado/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					lucas.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
-		// rodolffo = new Odometer({
-		// 	el: document.getElementById("rodolffo"),
-		// 	value: 1400000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/irodolffo/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			rodolffo.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/irodolffo/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			rodolffo.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		rodolffo = new Odometer({
+			el: document.getElementById("rodolffo"),
+			value: 1400000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/irodolffo/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					rodolffo.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/irodolffo/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					rodolffo.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
-		// viihtube = new Odometer({
-		// 	el: document.getElementById("viihtube"),
-		// 	value: 16400000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/viihtube/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			viihtube.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/viihtube/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			viihtube.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		viihtube = new Odometer({
+			el: document.getElementById("viihtube"),
+			value: 16400000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/viihtube/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					viihtube.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/viihtube/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					viihtube.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
-		// projota = new Odometer({
-		// 	el: document.getElementById("projota"),
-		// 	value: 3000000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/projota/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			projota.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/projota/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			projota.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
-
-
-
-
-		// fiuk = new Odometer({
-		// 	el: document.getElementById("fiuk"),
-		// 	value: 1600000,
-		// 	theme: 'default',
-		// 	format: '(,ddd).dd'
-		// });
-		// $.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/fiuk/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			fiuk.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// setInterval(function(){
-		// 	$.ajax({
-		// 		type: "GET",
-		// 		url: "https://www.instagram.com/fiuk/channel/?__a=1",
-		// 		cache: false,
-		// 		success: function(data) {
-		// 			fiuk.update(data.graphql.user.edge_followed_by.count);
-		// 		},
-		// 		error: function(){
-		// 			console.log("error");
-		// 		}
-		// 	});
-		// }, 10000);
+		projota = new Odometer({
+			el: document.getElementById("projota"),
+			value: 3000000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/projota/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					projota.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/projota/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					projota.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
 
 
 
-
-
-        // var toChange = 255892;
-
-		// setInterval(function(){
-		// 	console.log(toChange);
-		// 	num1.update(toChange);
-		// 	toChange += 17;
-		// }, 5000);
-		
-		// function fillInstagram(content){
-		// 	var followerCount = roundNum(content.edge_followed_by.count);
-		// 	var followingCount = roundNum(content.edge_follow.count);
-		// 	var postsCount = roundNum(content.edge_owner_to_timeline_media.count);
-		// 	$("#instagramFollowers").html(followerCount);
-		// 	$("#instagramFollowing").html(followingCount);
-		// 	$("#instagramPosts").html(postsCount);
-		// }
-
-		// function fillTiktok(content){
-		// 	var followerCount = roundNum(content.follower_count);
-		// 	var followingCount = roundNum(content.following_count);
-		// 	var postsCount = roundNum(content.total_favorited);
-		// 	$("#tiktokFollowers").html(followerCount);
-		// 	$("#tiktokFollowing").html(followingCount);
-		// 	$("#tiktokLikes").html(postsCount);
-		// }
-
-		// function roundNum(a){
-		// 	return Math.abs(a) > 999 ? Math.sign(a)*((Math.abs(a)/1000).toFixed(1)) + 'k' : Math.sign(a)*Math.abs(a);
-		// }
-
-		// $(".goTo").click(function(){
-		// 	window.open($(this).attr("adr"));
-		// });
+		fiuk = new Odometer({
+			el: document.getElementById("fiuk"),
+			value: 1600000,
+			theme: 'default',
+			format: '(,ddd).dd'
+		});
+		$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/fiuk/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					fiuk.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		setInterval(function(){
+			$.ajax({
+				type: "GET",
+				url: "https://www.instagram.com/fiuk/channel/?__a=1",
+				cache: false,
+				success: function(data) {
+					fiuk.update(data.graphql.user.edge_followed_by.count);
+				},
+				error: function(){
+					console.log("error");
+				}
+			});
+		}, 10000);
 
     });
 </script>
