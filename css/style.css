@@ -487,3 +487,23 @@ body{
     margin: auto;
     font-size: 5vw;
 }
+
+
+
+
+
+.updown {
+    position: relative;
+    font-size: 30px;
+    transform: translate(260px, -42px);
+    transition: all .2s;
+}
+
+.up{
+    color: #19a522;
+}
+
+.down{
+    color: #ef2c2c;
+    transform: translate(260px, -42px) rotateZ(180deg);
+}
