@@ -1,0 +1,484 @@
+html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: Montserrat, sans-serif, Trebuchet MS;
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #090909;
+	display: flex;
+	color: #fff;
+}
+
+.navBar{
+	width: 20%;
+	max-width: 300px;
+	background: #090909;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    min-width: 252px;
+    transition: all .2s;
+}
+
+.logoPos{
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+}
+
+.bbbsLogo {
+    width: auto;
+    height: 75%;
+    margin-left: 35px;
+    transition: all .2s;
+}
+
+.logoCover {
+    width: 100px;
+    height: 37.5px;
+    background: #090909;
+    position: absolute;
+    transform: translate(69px, -40px);
+    display: none;
+    transition: all .2s;
+}
+
+.bbbsTextPos{
+    height: 120px;
+}
+
+.bbbsText {
+    font-size: 20px;
+    color: #333;
+    margin-top: 14px;
+	margin-left: 27px;
+	width: 80%;
+}
+
+.navItems {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.navItem {
+    display: flex;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	border-radius: 10px;
+    padding: 5px;
+    max-height: 35px;
+    text-decoration: none;
+    width: calc(100% - 60px);
+    transition: all .2s;
+}
+
+
+
+.navItem:hover{
+	cursor: pointer;
+	background: #232323;
+}
+
+.iconBox {
+	width: 35px;
+	min-width: 35px;
+    height: 35px;
+    border-radius: 8px;
+	background: #232323;
+	display: flex;
+	color: #777;
+}
+
+.navIcon {
+    margin: auto;
+    font-size: 16px;
+}
+
+.itemName {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #777;
+    display: block;
+    transition: all .2s;
+}
+
+.navItemActive{
+	background: #232323;
+}
+
+.navItemActive > .iconBox{
+	background: #ef2c2c;
+	color: #fff;
+}
+
+.navItemActive > .itemName{
+	color: #fff;
+}
+
+.botNav {
+    margin-top: auto;
+}
+
+.botNav > .navItem > .itemName{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.spin{
+    transition: all .2s;
+    transform: rotateZ(0deg);
+}
+
+.line {
+    width: 70%;
+    height: 1px;
+    background: #222;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-15px);
+}
+
+
+
+
+
+
+
+.main{
+	width: calc(80% - 30px);
+	background: #232323;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+    padding: 15px;
+    margin-left: 20%;
+    transition: all .2s;
+    z-index: 2;
+}
+
+.bbbsFollowers {
+    display: flex;
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+}
+
+.player {
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    display: flex;
+	flex-direction: column;
+	padding: 5px;
+	padding-bottom: 20px;
+}
+
+.player > .top {
+    height: 68%;
+    width: 100%;
+    background: #405de6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.player > .bot {
+    height: 32%;
+    width: 100%;
+    background: #ddd;
+    border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	color: #000;
+}
+
+.playerImgPos {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.playerImage {
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playerInsta {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.playerInsta:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+}
+
+.playerName {
+    font-size: 27px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.playerBegin {
+	width: 80%;
+	margin-left: 10%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.playerBegin > span{
+	color: #fff;
+	font-size: 16px;
+}
+
+.followersText {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.followCount {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    margin-top: 18px;
+    font-family: Montserrat !important;
+    color: #111;
+}
+
+.playerOut > .top{
+	background: #e64040;
+}
+
+.playerOut > .top > .playerImgPos > .playerImage{
+	filter: grayscale(1);
+}
+
+
+
+
+
+
+
+
+.paredoesBox{
+    display: flex;
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+}
+
+.paredao{
+    min-width: 500px;
+    width: 60%;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: #000;
+}
+
+.paredaoTitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.playersBox{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.playerParedao {
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.paredaoImg {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.paredaoNome{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.paredaoPercent {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 22px;
+    color: #ef7c2c;
+}
+
+.paredaoOut > .paredaoPercent{
+    color: #ef2c2c;
+}
+
+.paredaoOut > .paredaoImg{
+    filter: grayscale(1);
+}
+
+
+
+
+
+.paredaoPH{
+    min-width: 500px;
+    width: 60%;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.paredaoTitlePH {
+    width: 240px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: #ccc;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.playersBoxPH{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.playerParedaoPH {
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.paredaoImgPH {
+    width: 100%;
+    border-radius: 50%;
+    background: #ddd;
+    height: 100px;
+}
+
+.paredaoNomePH {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    background: #ccc;
+    height: 22px;
+    border-radius: 50px;
+}
+
+.paredaoPercentPH {
+    width: 100%;
+    text-align: center;
+    margin-top: 7px;
+    background: #ddd;
+    height: 25px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .paredao{
+        min-width: 200px;
+    }
+    .playersBox{
+        flex-direction: column;
+    }
+    .paredaoTitle{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .paredaoPH{
+        min-width: 200px;
+    }
+    .playersBoxPH{
+        flex-direction: column;
+    }
+    .paredaoTitlePH{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .navBar{
+        width: 60px;
+        min-width: 60px;
+    }
+    .bbbsLogo{
+        margin-left: 16px;
+    }
+    .logoCover{
+        transform: translate(54px, -40px);
+    }
+    .navItem{
+        margin-left: 8px;
+    }
+
+    .main{
+        margin-left: 60px !important;
+        width: calc(100% - 90px) !important;
+    }
+
+
+}
+
+
+
+
+.sobreContent{
+    display: flex;
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+}
+
+.comingSoon {
+    margin: auto;
+    font-size: 5vw;
+}
