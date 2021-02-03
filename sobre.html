@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/css/all.css" rel="stylesheet">
+	<link href="css/alt/css/all.css" rel="stylesheet">
+    <link href="css/odometer-theme-default.css" rel="stylesheet"/>
+    <link rel="icon" href="img/logoIcon.png">
+	<title>Sobre - BBB Statistics</title>
+	<script src="js/jquery.js" charset="utf-8"></script>
+	<script src="js/odometer.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="navBar">
+		<div class="logoPos">
+			<img class="bbbsLogo" src="img/logoFinal.png">
+			<div class="logoCover"></div>
+		</div>
+		<div class="bbbsTextPos">
+			<div class="bbbsText">Big Brother Brasil Statistics</div>
+		</div>
+
+		<div class="navItems">
+			<a class="navItem" href="index.html">
+				<div class="iconBox">
+					<i class="fas fa-user navIcon"></i>
+				</div>
+				<div class="itemName">Seguidores</div>
+			</a>
+			<a class="navItem" href="paredoes.html">
+				<div class="iconBox">
+					<i class="fas fa-vote-nay navIcon"></i>
+				</div>
+				<div class="itemName">Paredões</div>
+			</a>
+			<a class="navItem navItemActive">
+				<div class="iconBox">
+					<i class="fas fa-info navIcon"></i>
+				</div>
+				<div class="itemName">Sobre</div>
+			</a>
+        </div>
+        <div class="line"></div>
+
+
+		<div class="botNav">
+            <div class="line"></div>
+			<div class="navItem navChange">
+				<div class="iconBox">
+					<i class="fas fa-arrow-left navIcon spin"></i>
+				</div>
+				<div class="itemName">Fechar Barra Lateral</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="sobreContent">
+            <div class="comingSoon">Em Construção</div>
+        </div>
+	</div>
+</body>
+
+<script>
+	$(document).ready(function() {
+        
+        var navState = true;
+        if(localStorage.getItem("navState") == null){
+			localStorage.setItem("navState", true);
+        } else if(localStorage.getItem("navState") == "false"){
+            closeNav();
+        } else {
+			openNav();
+		}
+
+		$(".navChange").click(function(){
+			if(navState){
+				closeNav();
+				navState = false;
+			} else {
+				openNav();
+				navState = true;
+            }
+            localStorage.setItem("navState", navState);
+		});
+
+		function closeNav(){
+            console.log($(window).width());
+            if($(window).width() > 650){
+
+                $(".itemName").css("display", "none");
+                $(".navItem").css("width", "35px");
+                $(".navBar").css("min-width", "95px");
+                $(".navBar").css("width", "95px");
+                $(".bbbsText").css("opacity", "0");
+                $(".logoCover").css("display", "block");
+                $(".spin").css("transform", "rotate(180deg)");
+                
+                $(".main").css("margin-left", "95px");
+                $(".main").css("width", "calc(100% - 125px)");
+
+            } else {
+                
+                $(".itemName").css("display", "none");
+                $(".navItem").css("width", "35px");
+                $(".navBar").css("min-width", "95px");
+                $(".navBar").css("max-width", "100%");
+                $(".navBar").css("width", "95px");
+                $(".navBar").css("z-index", "1");
+                $(".bbbsText").css("opacity", "0");
+                $(".logoCover").css("display", "block");
+                $(".spin").css("transform", "rotate(180deg)");
+                
+                $(".main").css("margin-left", "95px");
+                $(".main").css("width", "calc(100% - 125px)");
+            }
+
+		}
+
+		function openNav(){
+            if($(window).width() > 650){
+
+                $(".itemName").css("display", "block");
+                $(".navItem").css("width", "calc(100% - 60px)");
+                $(".navBar").css("min-width", "252px");
+                $(".navBar").css("width", "20%");
+                $(".bbbsText").css("opacity", "1");
+                $(".logoCover").css("display", "none");
+                $(".spin").css("transform", "rotate(0deg)");
+                
+                $(".main").css("margin-left", "20%");
+                $(".main").css("width", "calc(80% - 30px)");
+            
+            } else {
+                
+                $(".itemName").css("display", "block");
+                $(".navItem").css("width", "calc(100% - 60px)");
+                $(".navBar").css("min-width", "252px");
+                $(".navBar").css("max-width", "100%");
+                $(".navBar").css("width", "100%");
+                $(".navBar").css("z-index", "3");
+                $(".bbbsText").css("opacity", "1");
+                $(".logoCover").css("display", "none");
+                $(".spin").css("transform", "rotate(0deg)");
+                
+                $(".main").css("margin-left", "20%");
+                $(".main").css("width", "calc(80% - 30px)");
+            
+            }
+		}
+    });
+</script>
+
+</html>
