@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(webfonts/Montserrat-Medium.ttf);
+}
+
 html{
 	margin: 0;
 	padding: 0;
