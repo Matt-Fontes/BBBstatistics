@@ -75,6 +75,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="arthur" class="followCount">245,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -93,6 +94,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="caio" class="followCount">79,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -111,6 +113,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="rodolffo" class="followCount">1,400,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -129,6 +132,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="bil" class="followCount">127,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -147,6 +151,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="juliette" class="followCount">151,500</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -165,6 +170,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="kerline" class="followCount">159,900</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -183,6 +189,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="lumena" class="followCount">108,900</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -201,6 +208,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="gilberto" class="followCount">54,900</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -219,6 +227,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="thais" class="followCount">94,700</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -237,6 +246,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="sarah" class="followCount">67,500</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -255,6 +265,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="karol" class="followCount">1,600,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -273,6 +284,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="lucas" class="followCount">322,200</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -291,6 +303,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="carla" class="followCount">2,700,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -309,6 +322,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="camilla" class="followCount">3,100,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -327,6 +341,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="pocah" class="followCount">11,700,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -345,6 +360,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="negodi" class="followCount">1,100,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -363,6 +379,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="viihtube" class="followCount">16,400,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -381,6 +398,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="projota" class="followCount">3,000,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -399,6 +417,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="fiuk" class="followCount">1,600,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 
@@ -417,6 +436,7 @@
 				<div class="bot">
 					<div class="followersText">SEGUIDORES</div>
 					<div id="joao" class="followCount">76,000</div>
+					<i class="fas fa-caret-up updown up"></i>
 				</div>
 			</div>
 		</div>
@@ -519,12 +539,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var arthurVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/arthurpicoli/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					arthur.update(data.graphql.user.edge_followed_by.count);
+					arthurVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -537,6 +559,14 @@
 				cache: false,
 				success: function(data) {
 					arthur.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= arthurVal){
+						$("#arthur").next().removeClass("down");
+						$("#arthur").next().addClass("up");
+					} else {
+						$("#arthur").next().removeClass("up");
+						$("#arthur").next().addClass("down");
+					}
+					arthurVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -553,12 +583,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var caioVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/afiune_caio/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					caio.update(data.graphql.user.edge_followed_by.count);
+					caioVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -571,6 +603,14 @@
 				cache: false,
 				success: function(data) {
 					caio.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= caioVal){
+						$("#caio").next().removeClass("down");
+						$("#caio").next().addClass("up");
+					} else {
+						$("#caio").next().removeClass("up");
+						$("#caio").next().addClass("down");
+					}
+					caioVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -586,12 +626,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var joaoVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/joaolpedrosa/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					joao.update(data.graphql.user.edge_followed_by.count);
+					joaoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -604,6 +646,14 @@
 				cache: false,
 				success: function(data) {
 					joao.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= joaoVal){
+						$("#joao").next().removeClass("down");
+						$("#joao").next().addClass("up");
+					} else {
+						$("#joao").next().removeClass("up");
+						$("#joao").next().addClass("down");
+					}
+					joaoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -620,12 +670,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var bilVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/bilaraujjo/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					bil.update(data.graphql.user.edge_followed_by.count);
+					bilVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -638,6 +690,14 @@
 				cache: false,
 				success: function(data) {
 					bil.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= bilVal){
+						$("#bil").next().removeClass("down");
+						$("#bil").next().addClass("up");
+					} else {
+						$("#bil").next().removeClass("up");
+						$("#bil").next().addClass("down");
+					}
+					bilVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -655,12 +715,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var julietteVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/juliette.freire/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					juliette.update(data.graphql.user.edge_followed_by.count);
+					julietteVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -673,6 +735,14 @@
 				cache: false,
 				success: function(data) {
 					juliette.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= julietteVal){
+						$("#juliette").next().removeClass("down");
+						$("#juliette").next().addClass("up");
+					} else {
+						$("#juliette").next().removeClass("up");
+						$("#juliette").next().addClass("down");
+					}
+					julietteVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -690,12 +760,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var kerlineVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/kercardoso/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					kerline.update(data.graphql.user.edge_followed_by.count);
+					kerlineVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -708,6 +780,14 @@
 				cache: false,
 				success: function(data) {
 					kerline.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= kerlineVal){
+						$("#kerline").next().removeClass("down");
+						$("#kerline").next().addClass("up");
+					} else {
+						$("#kerline").next().removeClass("up");
+						$("#kerline").next().addClass("down");
+					}
+					kerlineVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -725,12 +805,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var lumenaVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/lumena.aleluia/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					lumena.update(data.graphql.user.edge_followed_by.count);
+					lumenaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -743,6 +825,14 @@
 				cache: false,
 				success: function(data) {
 					lumena.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= lumenaVal){
+						$("#lumena").next().removeClass("down");
+						$("#lumena").next().addClass("up");
+					} else {
+						$("#lumena").next().removeClass("up");
+						$("#lumena").next().addClass("down");
+					}
+					lumenaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -762,12 +852,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var gilbertoVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/gilnogueiraofc/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					gilberto.update(data.graphql.user.edge_followed_by.count);
+					gilbertoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -780,6 +872,14 @@
 				cache: false,
 				success: function(data) {
 					gilberto.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= gilbertoVal){
+						$("#gilberto").next().removeClass("down");
+						$("#gilberto").next().addClass("up");
+					} else {
+						$("#gilberto").next().removeClass("up");
+						$("#gilberto").next().addClass("down");
+					}
+					gilbertoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -798,12 +898,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var thaisVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/thaisfbraz/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					thais.update(data.graphql.user.edge_followed_by.count);
+					thaisVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -816,6 +918,14 @@
 				cache: false,
 				success: function(data) {
 					thais.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= thaisVal){
+						$("#thais").next().removeClass("down");
+						$("#thais").next().addClass("up");
+					} else {
+						$("#thais").next().removeClass("up");
+						$("#thais").next().addClass("down");
+					}
+					thaisVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -834,12 +944,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var sarahVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/sarah_andrade/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					sarah.update(data.graphql.user.edge_followed_by.count);
+					sarahVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -852,6 +964,14 @@
 				cache: false,
 				success: function(data) {
 					sarah.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= sarahVal){
+						$("#sarah").next().removeClass("down");
+						$("#sarah").next().addClass("up");
+					} else {
+						$("#sarah").next().removeClass("up");
+						$("#sarah").next().addClass("down");
+					}
+					sarahVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -869,12 +989,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var karolVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/karolconka/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					karol.update(data.graphql.user.edge_followed_by.count);
+					karolVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -887,6 +1009,15 @@
 				cache: false,
 				success: function(data) {
 					karol.update(data.graphql.user.edge_followed_by.count);
+					
+					if(data.graphql.user.edge_followed_by.count >= karolVal){
+						$("#karol").next().removeClass("down");
+						$("#karol").next().addClass("up");
+					} else {
+						$("#karol").next().removeClass("up");
+						$("#karol").next().addClass("down");
+					}
+					karolVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -904,12 +1035,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var carlaVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/carladiaz/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					carla.update(data.graphql.user.edge_followed_by.count);
+					carlaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -922,6 +1055,14 @@
 				cache: false,
 				success: function(data) {
 					carla.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= carlaVal){
+						$("#carla").next().removeClass("down");
+						$("#carla").next().addClass("up");
+					} else {
+						$("#carla").next().removeClass("up");
+						$("#carla").next().addClass("down");
+					}
+					carlaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -938,12 +1079,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var camillaVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/camilladelucas/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					camilla.update(data.graphql.user.edge_followed_by.count);
+					camillaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -956,6 +1099,14 @@
 				cache: false,
 				success: function(data) {
 					camilla.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= camillaVal){
+						$("#camilla").next().removeClass("down");
+						$("#camilla").next().addClass("up");
+					} else {
+						$("#camilla").next().removeClass("up");
+						$("#camilla").next().addClass("down");
+					}
+					camillaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -973,12 +1124,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var pocahVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/pocah/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					pocah.update(data.graphql.user.edge_followed_by.count);
+					pocahVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -991,6 +1144,14 @@
 				cache: false,
 				success: function(data) {
 					pocah.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= pocahVal){
+						$("#pocah").next().removeClass("down");
+						$("#pocah").next().addClass("up");
+					} else {
+						$("#pocah").next().removeClass("up");
+						$("#pocah").next().addClass("down");
+					}
+					pocahVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1008,12 +1169,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var negodiVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/negodioficial/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					negodi.update(data.graphql.user.edge_followed_by.count);
+					negodiVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1026,6 +1189,14 @@
 				cache: false,
 				success: function(data) {
 					negodi.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= negodiVal){
+						$("#negodi").next().removeClass("down");
+						$("#negodi").next().addClass("up");
+					} else {
+						$("#negodi").next().removeClass("up");
+						$("#negodi").next().addClass("down");
+					}
+					negodiVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1043,12 +1214,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var lucasVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/lucaskokapenteado/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					lucas.update(data.graphql.user.edge_followed_by.count);
+					lucasVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1061,6 +1234,14 @@
 				cache: false,
 				success: function(data) {
 					lucas.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= lucasVal){
+						$("#lucas").next().removeClass("down");
+						$("#lucas").next().addClass("up");
+					} else {
+						$("#lucas").next().removeClass("up");
+						$("#lucas").next().addClass("down");
+					}
+					lucasVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1077,12 +1258,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var rodolffoVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/irodolffo/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					rodolffo.update(data.graphql.user.edge_followed_by.count);
+					rodolffoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1095,6 +1278,14 @@
 				cache: false,
 				success: function(data) {
 					rodolffo.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= rodolffoVal){
+						$("#rodolffo").next().removeClass("down");
+						$("#rodolffo").next().addClass("up");
+					} else {
+						$("#rodolffo").next().removeClass("up");
+						$("#rodolffo").next().addClass("down");
+					}
+					rodolffoVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1110,12 +1301,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var viihtubeVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/viihtube/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					viihtube.update(data.graphql.user.edge_followed_by.count);
+					viihtubeVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1128,6 +1321,14 @@
 				cache: false,
 				success: function(data) {
 					viihtube.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= viihtubeVal){
+						$("#viihtube").next().removeClass("down");
+						$("#viihtube").next().addClass("up");
+					} else {
+						$("#viihtube").next().removeClass("up");
+						$("#viihtube").next().addClass("down");
+					}
+					viihtubeVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1143,12 +1344,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var projotaVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/projota/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					projota.update(data.graphql.user.edge_followed_by.count);
+					projotaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1161,6 +1364,14 @@
 				cache: false,
 				success: function(data) {
 					projota.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= projotaVal){
+						$("#projota").next().removeClass("down");
+						$("#projota").next().addClass("up");
+					} else {
+						$("#projota").next().removeClass("up");
+						$("#projota").next().addClass("down");
+					}
+					projotaVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1177,12 +1388,14 @@
 			theme: 'default',
 			format: '(,ddd).dd'
 		});
+		var fiukVal = 0;
 		$.ajax({
 				type: "GET",
 				url: "https://www.instagram.com/fiuk/channel/?__a=1",
 				cache: false,
 				success: function(data) {
 					fiuk.update(data.graphql.user.edge_followed_by.count);
+					fiukVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
@@ -1195,6 +1408,14 @@
 				cache: false,
 				success: function(data) {
 					fiuk.update(data.graphql.user.edge_followed_by.count);
+					if(data.graphql.user.edge_followed_by.count >= fiukVal){
+						$("#fiuk").next().removeClass("down");
+						$("#fiuk").next().addClass("up");
+					} else {
+						$("#fiuk").next().removeClass("up");
+						$("#fiuk").next().addClass("down");
+					}
+					fiukVal = data.graphql.user.edge_followed_by.count;
 				},
 				error: function(){
 					console.log("error");
