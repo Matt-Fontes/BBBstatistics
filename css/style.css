@@ -422,6 +422,59 @@ body{
 }
 
 
+.sobreContent{
+    display: flex;
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+}
+
+.comingSoon {
+    margin: auto;
+    font-size: 5vw;
+}
+
+
+
+
+.updown {
+    position: relative;
+    font-size: 30px;
+    transform: translate(260px, -42px);
+    transition: all .2s;
+}
+
+.up{
+    color: #19a522;
+}
+
+.down{
+    color: #ef2c2c;
+    transform: translate(260px, -42px) rotateZ(180deg);
+}
+
+
+.progressBar {
+    height: 5px;
+    width: 90%;
+    background: #aaa;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-5px);
+    border-radius: 50px;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background: #19a522;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+
 
 
 
@@ -468,42 +521,17 @@ body{
         width: calc(100% - 90px) !important;
     }
 
+    .updown {
+        transform: translate(245px, -42px);
+    }
+
+    .down{
+        transform: translate(245px, -42px) rotateZ(180deg);
+    }
+
 
 }
 
 
 
 
-.sobreContent{
-    display: flex;
-    width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	flex-wrap: wrap;
-}
-
-.comingSoon {
-    margin: auto;
-    font-size: 5vw;
-}
-
-
-
-
-
-.updown {
-    position: relative;
-    font-size: 30px;
-    transform: translate(260px, -42px);
-    transition: all .2s;
-}
-
-.up{
-    color: #19a522;
-}
-
-.down{
-    color: #ef2c2c;
-    transform: translate(260px, -42px) rotateZ(180deg);
-}
