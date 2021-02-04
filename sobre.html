@@ -46,6 +46,14 @@
         </div>
         <div class="line"></div>
 
+        <div class="darkModePos">
+			<div class="navItem darkMode">
+				<div class="iconBox">
+					<i class="fas fa-moon navIcon"></i>
+				</div>
+				<div class="itemName">Dark Mode</div>
+			</div>
+		</div>
 
 		<div class="botNav">
             <div class="line"></div>
@@ -92,7 +100,6 @@
 		});
 
 		function closeNav(){
-            console.log($(window).width());
             if($(window).width() > 650){
 
                 $(".itemName").css("display", "none");
@@ -154,7 +161,54 @@
                 $(".main").css("width", "calc(80% - 30px)");
             
             }
-		}
+        }
+        
+
+        //Dark Mode
+		
+		var darkMode = true;
+
+        if(localStorage.getItem("darkMode") == null){
+            localStorage.setItem("darkMode", true);
+        } else if(localStorage.getItem("darkMode") == "false"){
+            darkModeOff();
+        } else {
+            darkModeOn();
+        }
+
+        $(".darkMode").click(function(){
+            console.log(darkMode);
+            if(darkMode){
+                darkModeOff();
+            } else {
+                darkModeOn();
+            }
+            localStorage.setItem("darkMode", darkMode);
+        });
+
+        function darkModeOn(){
+            darkMode = true;
+
+            $(".darkMode").find(".iconBox").css("background", "#32a41a");
+            $(".darkMode").find(".iconBox").css("color", "#fff");
+
+            $(".main").removeClass("mainLight");
+            $(".top").removeClass("boxLight");
+            $(".bot").removeClass("boxLight");	
+        }
+
+        function darkModeOff(){
+            darkMode = false;
+
+            $(".darkMode").find(".iconBox").css("background", "#232323");
+            $(".darkMode").find(".iconBox").css("color", "#777");
+
+            $(".main").addClass("mainLight");
+            $(".top").addClass("boxLight");
+            $(".bot").addClass("boxLight");
+        }
+
+
     });
 </script>
 
