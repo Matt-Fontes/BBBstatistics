@@ -68,12 +68,16 @@
 	$(document).ready(function() {
         
         var navState = true;
-        if(localStorage.getItem("navState") == null){
-			localStorage.setItem("navState", true);
-        } else if(localStorage.getItem("navState") == "false"){
-            closeNav();
-        } else {
-			openNav();
+        if($(window).width() > 650){
+			if(localStorage.getItem("navState") == null){
+				localStorage.setItem("navState", true);
+			} else if(localStorage.getItem("navState") == "false"){
+				closeNav();
+			} else {
+				openNav();
+			}
+		} else {
+			closeNav();
 		}
 
 		$(".navChange").click(function(){
