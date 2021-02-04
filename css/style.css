@@ -285,9 +285,6 @@ body{
 
 
 
-
-
-
 .paredoesBox{
     display: flex;
     width: 100%;
@@ -476,6 +473,16 @@ body{
 
 
 
+.mainLight{
+    background: #c3c3c3;
+}
+
+.boxLight{
+    box-shadow: 5px 5px 10px #aaa;
+}
+
+
+
 
 
 
@@ -500,7 +507,7 @@ body{
     .paredaoTitlePH{
         font-size: 16px;
         margin-top: 20px;
-	width: 80%;
+        width: 80%;
     }
 
     .navBar{
