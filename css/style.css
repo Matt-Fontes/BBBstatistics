@@ -500,6 +500,7 @@ body{
     .paredaoTitlePH{
         font-size: 16px;
         margin-top: 20px;
+	width: 80%;
     }
 
     .navBar{
