@@ -58,6 +58,9 @@
 		</div>
 	</div>
 	<div class="main">
+		<div class="progressBar">
+			<div class="bar"></div>
+		</div>
 		<div class="bbbsFollowers">
 
 			<!-- Arthur -->
@@ -531,6 +534,18 @@
 		}
 
 
+		// Progress Bar
+
+		var barProgress = 0;
+
+		setInterval(function(){
+			if(barProgress >= 100) barProgress = 0;
+			barProgress++;
+			$(".bar").css("width", barProgress + "%");
+		}, 200);
+		
+
+
 		// ARTHUR //
 
 		arthur = new Odometer({
@@ -548,8 +563,8 @@
 					arthur.update(data.graphql.user.edge_followed_by.count);
 					arthurVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -568,11 +583,11 @@
 					}
 					arthurVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -592,8 +607,8 @@
 					caio.update(data.graphql.user.edge_followed_by.count);
 					caioVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -612,11 +627,11 @@
 					}
 					caioVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 		
 
@@ -635,8 +650,8 @@
 					joao.update(data.graphql.user.edge_followed_by.count);
 					joaoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -655,11 +670,11 @@
 					}
 					joaoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 		
 
 
@@ -679,8 +694,8 @@
 					bil.update(data.graphql.user.edge_followed_by.count);
 					bilVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -699,11 +714,11 @@
 					}
 					bilVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -724,8 +739,8 @@
 					juliette.update(data.graphql.user.edge_followed_by.count);
 					julietteVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -744,11 +759,11 @@
 					}
 					julietteVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -769,8 +784,8 @@
 					kerline.update(data.graphql.user.edge_followed_by.count);
 					kerlineVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -789,11 +804,11 @@
 					}
 					kerlineVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -814,8 +829,8 @@
 					lumena.update(data.graphql.user.edge_followed_by.count);
 					lumenaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -834,11 +849,11 @@
 					}
 					lumenaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -861,8 +876,8 @@
 					gilberto.update(data.graphql.user.edge_followed_by.count);
 					gilbertoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -881,11 +896,11 @@
 					}
 					gilbertoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -907,8 +922,8 @@
 					thais.update(data.graphql.user.edge_followed_by.count);
 					thaisVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -927,11 +942,11 @@
 					}
 					thaisVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -953,8 +968,8 @@
 					sarah.update(data.graphql.user.edge_followed_by.count);
 					sarahVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -973,11 +988,11 @@
 					}
 					sarahVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -998,8 +1013,8 @@
 					karol.update(data.graphql.user.edge_followed_by.count);
 					karolVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1019,11 +1034,11 @@
 					}
 					karolVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1044,8 +1059,8 @@
 					carla.update(data.graphql.user.edge_followed_by.count);
 					carlaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1064,11 +1079,11 @@
 					}
 					carlaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1088,8 +1103,8 @@
 					camilla.update(data.graphql.user.edge_followed_by.count);
 					camillaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1108,11 +1123,11 @@
 					}
 					camillaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1133,8 +1148,8 @@
 					pocah.update(data.graphql.user.edge_followed_by.count);
 					pocahVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1153,11 +1168,11 @@
 					}
 					pocahVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1178,8 +1193,8 @@
 					negodi.update(data.graphql.user.edge_followed_by.count);
 					negodiVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1198,11 +1213,11 @@
 					}
 					negodiVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1223,8 +1238,8 @@
 					lucas.update(data.graphql.user.edge_followed_by.count);
 					lucasVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1243,11 +1258,11 @@
 					}
 					lucasVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1267,8 +1282,8 @@
 					rodolffo.update(data.graphql.user.edge_followed_by.count);
 					rodolffoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1287,11 +1302,11 @@
 					}
 					rodolffoVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1310,8 +1325,8 @@
 					viihtube.update(data.graphql.user.edge_followed_by.count);
 					viihtubeVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1330,11 +1345,11 @@
 					}
 					viihtubeVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1353,8 +1368,8 @@
 					projota.update(data.graphql.user.edge_followed_by.count);
 					projotaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1373,11 +1388,11 @@
 					}
 					projotaVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
 
 
@@ -1397,8 +1412,8 @@
 					fiuk.update(data.graphql.user.edge_followed_by.count);
 					fiukVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
 		setInterval(function(){
@@ -1417,11 +1432,11 @@
 					}
 					fiukVal = data.graphql.user.edge_followed_by.count;
 				},
-				error: function(){
-					console.log("error");
+				error: function (request, status, error) {
+					console.log("request: " + request.responseText + " status: " + status + " error: " + error);
 				}
 			});
-		}, 10000);
+		}, 20000);
 
     });
 </script>
