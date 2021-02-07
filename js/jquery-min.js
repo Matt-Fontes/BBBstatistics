@@ -22,6 +22,10 @@ $(document).ready(function() {
     if ( document.URL.includes("sobre.html") ) {
         pageNum = 3;
     }
+    
+    if ( document.URL.includes("queridometro.html") ) {
+        pageNum = 4;
+    }
 
     var tempo = new Date();
 
