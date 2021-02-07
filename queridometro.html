@@ -1559,7 +1559,7 @@
                 "joao": 0
             };
 
-            console.log(pr);
+            //console.log(pr);
 
             localStorage.setItem("current", JSON.stringify(pr));
         } else {
@@ -1585,7 +1585,7 @@
         function getQMS(){
 
             $.getJSON("https://matheusfontes.000webhostapp.com/getQM.php", function(result) {
-				console.log(result);
+				//console.log(result);
 				$.each(result, function(i, field) {
 					for(var j = 1; j <= 9; j++){
                         $(".qm[player='" + field.nm_qm + "']").find(".emojiBox[emoji=" + j + "]").next().text(field["cd_emo" + j]);
