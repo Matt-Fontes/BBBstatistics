@@ -473,6 +473,198 @@ body{
 
 
 
+
+
+
+/*******************/
+/*  Queridometro   */
+/*******************/
+
+
+
+
+.queridometroContent{
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.qmTitlePos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.qmTitle {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+    transition: all .2s;
+}
+
+.qmSubTitle {
+    font-size: 17px;
+    margin-top: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ccc;
+    transition: all .2s;
+}
+
+.qms{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.qm{
+    width: 250px;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: all .2s;
+    flex-direction: column;
+}
+
+.qmImgPos {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.qmImg {
+    width: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.playerNick {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.emojisPos {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emojiContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.emojiBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.emojiBox:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.emoji{
+    margin: auto;
+    font-size: 30px;
+}
+
+.emojiContent:nth-of-type(1) > .emojiBox{
+    background: #004936;
+}
+.emojiContent:nth-of-type(2) > .emojiBox{
+    background: #a59f01;
+}
+.emojiContent:nth-of-type(3) > .emojiBox{
+    background: #ffa302;
+}
+.emojiContent:nth-of-type(4) > .emojiBox{
+    background: #94000a;
+}
+.emojiContent:nth-of-type(5) > .emojiBox{
+    background: #353535;
+}
+.emojiContent:nth-of-type(6) > .emojiBox{
+    background: #fe2c4c;
+}
+.emojiContent:nth-of-type(7) > .emojiBox{
+    background: #7f1172;
+}
+.emojiContent:nth-of-type(8) > .emojiBox{
+    background: #e2d11b;
+}
+.emojiContent:nth-of-type(9) > .emojiBox{
+    background: #00c114;
+}
+
+.emojiNum {
+    color: #444;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.qmSelected{
+    color: #ef2c2c;
+}
+
+.outHousePos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.outHouseTitle {
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all .2s;
+}
+
+
+
+
+/*******************/
+/*    DARK MODE    */
+/*******************/
+
+
 .mainLight{
     background: #c3c3c3;
 }
@@ -485,6 +677,20 @@ body{
     background: #32a41a;
     color: #fff;
 }
+
+.darkTitle{
+    color: #000;
+}
+
+.darkSubTitle{
+    color: #131313;
+}
+
+
+
+
+
+
 
 
 
@@ -541,6 +747,23 @@ body{
     .down{
         transform: translate(245px, -42px) rotateZ(180deg);
     }
+
+
+
+
+
+
+    .qmTitle{
+        font-size: 30px;
+    }
+
+    .qm{
+        width: 90%;
+    }
+
+    
+
+    
 
 
 }
