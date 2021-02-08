@@ -291,7 +291,7 @@ body{
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .paredao{
@@ -355,6 +355,31 @@ body{
     filter: grayscale(1);
 }
 
+.votarAgoraBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: #2c66ef;
+    min-height: 30px;
+    text-align: center;
+    display: flex;
+    border-radius: 50px;
+    min-width: 0;
+    margin-top: 15px;
+    transform: scale(1);
+    transition: all .2s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.votarAgoraBox:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.votarAgoraText {
+    margin: auto;
+}
 
 
 
