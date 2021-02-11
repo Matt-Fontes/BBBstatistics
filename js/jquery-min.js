@@ -34,20 +34,25 @@ $(document).ready(function() {
     var dataString="novo="+novo+"&pageNum="+pageNum+"&tempo="+timeFormat;
 
     var url = "https://matheusfontes.000webhostapp.com/load.php";
-
-    $.ajax({
-        type: "POST",
-        url: url,
-        data: dataString,
-        crossDomain: true,
-        cache: false,
-        success: function(data){
-            console.log(data);
-        },
-        error: function (request, status, error) {
-            console.log("request: " + request.responseText + " status: " + status + " error: " + error);
-        }
-    });
+       
+   if(novo == 1){
+   
+   
+    
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: dataString,
+            crossDomain: true,
+            cache: false,
+            success: function(data){
+                console.log(data);
+            },
+            error: function (request, status, error) {
+                console.log("request: " + request.responseText + " status: " + status + " error: " + error);
+            }
+        });
+   }
 
 
 
